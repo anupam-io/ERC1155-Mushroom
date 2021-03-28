@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "compile": "truffle compile",
+    "test": "truffle test",
     "migrate": "truffle migrate --reset --network rinkeby",
     "verify:m": "truffle run verify Mushroom --network rinkeby --license MIT",
     "verify:r": "truffle run verify MushroomReceiver --network rinkeby --license MIT"
