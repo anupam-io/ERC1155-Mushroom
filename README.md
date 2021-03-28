@@ -20,12 +20,6 @@
  - Visit *https://testnets.opensea.io/* and enter the address of above deployed `Mushroom` contract
  - **Enjoy with your NFTs!!!**
 
-## How to test?
- - Install using `yarn`
- - Run `truffle dev`
- - Run `migrate --reset`
- - run `test`
-
 ## Notes for MushroomReceiver
  - This contract is made to recieve ERC1155 tokens
  - The admin of this contract can transfer tokens to anyone
