@@ -25,3 +25,14 @@
  - [Mushroom](https://rinkeby.etherscan.io/address/0xfA9d1298E22AFA3B5c46Db91424028857C10742A#readContract)
  - [MushroomReceiver](https://rinkeby.etherscan.io/address/0x76D82D278dc9AbA8b4Bb63Dc9b7De1Ad8C454098#contracts)
  - [Token on Opensea](https://testnets.opensea.io/assets/0xfa9d1298e22afa3b5c46db91424028857c10742a/0)
+
+## Dependencies
+```
+"dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "@truffle/hdwallet-provider": "1.0.40",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.2.6",
+    "truffle-plugin-verify": "^0.5.7"
+}
+```

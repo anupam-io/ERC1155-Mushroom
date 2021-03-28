@@ -2,7 +2,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
-import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Mushroom is ERC1155, Ownable {
@@ -16,8 +15,8 @@ contract Mushroom is ERC1155, Ownable {
         collectibleId = 0;
     }
 
-    function mint(address _receiver) public onlyOwner {
-        _mint(_receiver, collectibleId, 20, "");
+    function mint(address _receiver, uint256 amount) public onlyOwner {
+        _mint(_receiver, collectibleId, amount, "");
         collectibleId++;
     }
 }
