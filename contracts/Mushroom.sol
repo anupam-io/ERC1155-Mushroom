@@ -9,7 +9,9 @@ contract Mushroom is ERC1155, Ownable {
     uint256 public collectibleId;
 
     constructor()
-        ERC1155("https://raw.githubusercontent.com/akcgjc007/erc1155-msm/main/meta/{id}.json")
+        ERC1155(
+            "https://raw.githubusercontent.com/akcgjc007/erc1155-Mushroom/main/meta/{id}.json"
+        )
     {
         collectibleId = 0;
     }
