@@ -1,0 +1,20 @@
+{
+  "name": "erc1155-mushroom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset --network rinkeby",
+    "verify:m": "truffle run verify Mushroom --network rinkeby --license MIT",
+    "verify:r": "truffle run verify MushroomReceiver --network rinkeby --license MIT",
+    "test": "truffle test;"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "@truffle/hdwallet-provider": "1.0.40",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.2.6",
+    "truffle-plugin-verify": "^0.5.7"
+  }
+}
