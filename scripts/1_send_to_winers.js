@@ -1,19 +1,15 @@
-const Mushroom = artifacts.require("Mushroom");
-const MushroomReceiver = artifacts.require("MushroomReceiver");
 
+module.exports = async function () {
+    const Mushroom = await artifacts.require("Mushroom").deployed();
+    const MushroomReceiver = await artifacts.require("MushroomReceiver").deployed();
+    const mush = new web3.eth.Contract(Mushroom.abi, Mushroom.address);
+    const mushR = new web3.eth.Contract(MushroomReceiver.abi, MushroomReceiver.address);
 
-module.exports = async function (){
-    mush = await Mushroom.deployed();
-    mushR = await MushroomReceiver.deployed();
-    
-    console.log(mush);
-    console.log(mushR);
+    const accounts = await web3.eth.getAccounts();
 
-    // myAccount = (await web3.eth.getAccounts())[0];
-    // await mush.mint(mushR.address);
-    // await mushR.sendToWinners(mush.address, myAccount, 0, (10).toString());
-}
+    await mush.methods.mint(mushR).send({from: accounts[0]});
+
+};
 // Create the token via mint()
-
 
 // Distribute the token via sendToWinners()

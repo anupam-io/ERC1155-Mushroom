@@ -8,7 +8,8 @@
     "migrate": "truffle migrate --reset --network rinkeby",
     "verify:m": "truffle run verify Mushroom --network rinkeby --license MIT",
     "verify:r": "truffle run verify MushroomReceiver --network rinkeby --license MIT",
-    "test": "truffle test;"
+    "test": "truffle test;",
+    "start": "" 
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.0.0",
