@@ -4,17 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "truffle compile",
-    "test": "truffle test",
-    "migrate": "truffle migrate --reset --network rinkeby",
-    "verify:m": "truffle run verify Mushroom --network rinkeby --license MIT",
-    "verify:r": "truffle run verify MushroomReceiver --network rinkeby --license MIT"
+    "compile": "npx truffle compile",
+    "test": "npx truffle test",
+    "migrate": "npx truffle migrate --reset --network rinkeby",
+    "verify:m": "npx truffle run verify Mushroom --network rinkeby --license MIT",
+    "verify:r": "npx truffle run verify MushroomReceiver --network rinkeby --license MIT"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.0.0",
     "@truffle/hdwallet-provider": "1.0.40",
     "dotenv": "^8.2.0",
-    "truffle": "^5.2.6",
     "truffle-plugin-verify": "^0.5.7"
   }
 }
